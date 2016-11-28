@@ -1,0 +1,159 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+header {
+    height: auto;
+    background-color: #0c2f4b;
+    min-width: 800px;
+}
+.headerLargeScreen {
+    height: 157px;
+}
+
+.center {
+    margin: auto;
+    width: 94%;
+    height: auto;
+}
+.siteLogo {
+    float: left;
+}
+.siteTitle {
+    float: left;
+    color: aliceblue;
+    font-size: 2.2em;
+    font-family: Arial, sans-serif;
+    margin-top: 60px;
+}
+.userContainer {
+    height: 157px;        
+    min-width: 200px;
+    float: right;
+}
+.userName {
+    float: left;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    margin-top: 64px;
+}
+.userImageContainer {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    float: left;
+    background-color: aliceblue;
+    margin-top: 49px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.userImage {
+    width: 100%;
+}
+.userMenuImage {
+    width: 70%;
+}
+
+.userMenuButton {
+    margin-top: 68px;
+	background-color:transparent;
+	border: none;
+	cursor:pointer;
+}
+.userMenuButton:hover .menu {
+    display: block;
+}
+
+.userMenuButton li:hover .menu {
+    display: block;
+}
+.userMenuButton:active {
+	top: 1px;
+}
+.menu {
+    display: none;
+    right: 3%;
+    border-radius: 5px;
+    background-color: aliceblue;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 50px;
+    width: 150px;
+    padding: 0px;
+    list-style: none;
+    
+}
+.menuItem a {
+    font-size: 1.3em;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    color: #0c2f4b;
+   transition: 0.5s all;
+}
+
+.menuItem a:hover {
+    background-color: #0c1f4b;
+    color: aliceblue;
+}
+.menuItem a:active {
+    font-size: 1.5em;
+}
+
+.mainMenu {
+    list-style: none; 
+}
+.mainMenuItem {
+    display: inline-block;
+    height: 38px;
+    width: 100px;
+    padding-top: 12px;
+    text-align: center;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+.mainMenuItem a {
+    color: aliceblue;
+}
+
+.mainMenuItem:hover {
+    background-color: #0c1f4b;
+}
+.mainMenuItem:active {
+    font-size: 1.5em;
+}
+
+.myButton {
+    position: absolute;
+    margin-top: 20px;
+    right: 4%;
+	background-color:#009688;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius: 50px;
+	border:1px solid #009661;
+	display: block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 2.5em;
+    padding: 30px;
+    max-width: 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    text-align: center;
+}
+.myButton:hover {
+	background-color:#009669;
+}
+.myButton:active {
+	font-size: 2.8em;
+	margin-top: 21px;
+    transition: 0.2s all;
+}
