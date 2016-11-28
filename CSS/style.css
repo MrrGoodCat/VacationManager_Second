@@ -28,7 +28,7 @@ header {
     float: left;
     color: aliceblue;
     font-size: 2.2em;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
     margin-top: 80px;
     margin-left: 15px;
 }
@@ -41,7 +41,7 @@ header {
 .userName {
     float: left;
     color: aliceblue;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
     font-size: 1.5em;
     margin-top: 64px;
 }
@@ -68,11 +68,10 @@ header {
 	border: none;
 	cursor:pointer;
 }
-.userMenuButton:hover .menu {
-    display: block;
-}
 
-.userMenuButton li:hover .menu {
+.main-item:focus ~ .menu,
+.main-item:active ~ .menu,
+.menu:hover {
     display: block;
 }
 .userMenuButton:active {
@@ -126,7 +125,7 @@ header {
     font-size: 1.3em;
     cursor: pointer;
     transition: 0.7s all;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 .mainMenuItem a {
     color: aliceblue;
