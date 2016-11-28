@@ -102,7 +102,8 @@ header {
     color: aliceblue;
 }
 .menuItem a:active {
-    font-size: 1.5em;
+    color: #0c2f4b;
+    background-color: aliceblue;
 }
 
 .mainMenu {
@@ -116,7 +117,8 @@ header {
     text-align: center;
     font-size: 1.3em;
     cursor: pointer;
-    transition: 0.4s all;
+    transition: 0.7s all;
+    font-family: Arial, sans-serif;
 }
 .mainMenuItem a {
     color: aliceblue;
@@ -125,26 +127,34 @@ header {
 .mainMenuItem:hover {
     background-color: #0c1f4b;
 }
-.mainMenuItem:active {
-    font-size: 1.5em;
+.mainMenuItem:active{
+    color: #0c2f4b;
+    background-color: aliceblue;
+    transition: 0.9s all;
 }
 
+.mainMenuItem:active a {
+    color: #0c2f4b;
+    font-weight: 500;
+}
 .myButton {
     position: absolute;
     margin-top: 20px;
     right: 4%;
 	background-color:#009688;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
+	-moz-border-radius:50px;
+	-webkit-border-radius:50px;
 	border-radius: 50px;
 	border:1px solid #009661;
-	display: block;
+	display: none;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family:Arial, sans-serif;
 	font-size: 2.5em;
-    padding: 30px;
-    max-width: 20px;
+    
+    padding: 0px;
+    width: 50px;
+    height: 50px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
     text-align: center;
