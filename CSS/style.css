@@ -12,7 +12,7 @@ header {
     min-width: 800px;
 }
 .headerLargeScreen {
-    height: 157px;
+    height: 200px;
 }
 
 .center {
@@ -22,18 +22,21 @@ header {
 }
 .siteLogo {
     float: left;
+    margin-top: 20px;
 }
 .siteTitle {
     float: left;
     color: aliceblue;
     font-size: 2.2em;
     font-family: Arial, sans-serif;
-    margin-top: 60px;
+    margin-top: 80px;
+    margin-left: 15px;
 }
 .userContainer {
     height: 157px;        
     min-width: 200px;
     float: right;
+    margin-top: 20px;
 }
 .userName {
     float: left;
@@ -86,7 +89,7 @@ header {
     width: 150px;
     padding: 0px;
     list-style: none;
-    
+    z-index: 10;
 }
 .menuItem a {
     font-size: 1.3em;
@@ -107,12 +110,17 @@ header {
 }
 
 .mainMenu {
+    margin-left: 3%;
     list-style: none; 
+}
+#mainMenu {
+    width: 100%;
+    background-color: #0c2a4b;
 }
 .mainMenuItem {
     display: inline-block;
     height: 38px;
-    width: 100px;
+    width: 130px;
     padding-top: 12px;
     text-align: center;
     font-size: 1.3em;
@@ -137,33 +145,72 @@ header {
     color: #0c2f4b;
     font-weight: 500;
 }
-.myButton {
-    position: absolute;
-    margin-top: 20px;
-    right: 4%;
-	background-color:#009688;
-	-moz-border-radius:50px;
-	-webkit-border-radius:50px;
-	border-radius: 50px;
-	border:1px solid #009661;
-	display: none;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial, sans-serif;
-	font-size: 2.5em;
-    
-    padding: 0px;
-    width: 50px;
-    height: 50px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
+
+/*.mainMenuItem:active ~ .center.menuLine {
+    margin-left: 300px;
+}*/
+.menuLine {
+    height: 8px;
+    width: 130px;
+    margin-left: 3%;
+    background-color: aliceblue;
+}
+.addButton {
+    height: 60px;
+    width: 60px;
+    border: 1px solid darkred;
+    background-color: crimson;
+    border-radius: 30px;
     text-align: center;
+    align-content: center;
+    position: absolute;
+    right: 65px;
+    top: 225px;
+    transition: 0.6s all;
+    box-shadow: 1px 1px 3px;
 }
-.myButton:hover {
-	background-color:#009669;
+
+.addButton .button {
+    display: block;
+    border-radius: 30px;
+    font-size: 3.4em;
+    color: aliceblue;
+    font-weight: 800;
 }
-.myButton:active {
-	font-size: 2.8em;
-	margin-top: 21px;
-    transition: 0.2s all;
+
+.addButton:hover {
+    background-color: darkred;
 }
+.addButton:active {
+    background-color: aliceblue;
+    box-shadow: 2px 2px 4px;
+}
+.addButton .button:active {
+    color: crimson;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
