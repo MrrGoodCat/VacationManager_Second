@@ -119,7 +119,7 @@ header {
 .mainMenuItem {
     display: inline-block;
     height: 38px;
-    width: 130px;
+    width: 190px;
     padding-top: 12px;
     text-align: center;
     font-size: 1.3em;
@@ -150,7 +150,7 @@ header {
 }*/
 .menuLine {
     height: 8px;
-    width: 130px;
+    width: 190px;
     margin-left: 3%;
     background-color: aliceblue;
 }
@@ -186,6 +186,25 @@ header {
 }
 .addButton .button:active {
     color: crimson;
+}
+
+
+
+
+.tabbed {
+    height: 60px;
+    width: 94%;
+    margin: auto;
+}
+
+.tabbed > input {
+    display: none;
+}
+
+.tabbed label {
+    display: inline-block;
+    width: 190px;
+    
 }
 
 

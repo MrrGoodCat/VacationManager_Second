@@ -4,7 +4,9 @@
     <meta http-equiv="content-type" content="text/html" charset="UTF-8">
     <link rel="stylesheet" href="CSS/style.css" type="text/css"/>
     <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
-   <link rel="stylesheet" href="material.deep_purple-pink.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+   
     <title>Vacation Manager</title>
 </head>
 <body>
@@ -32,16 +34,27 @@
             </div>
         </div>
         <div class="center" id="mainMenu">
+            <div class="tabbed">
+                <input type="radio" name="tabs" id="tab-nav-1">
+                <label for="tab-nav-1">Home</label>
+                <input type="radio" name="tabs" id="tab-nav-2">
+                <label for="tab-nav-2">Waiting for approval</label>
+                <input type="radio" name="tabs" id="tab-nav-3">
+                <label for="tab-nav-3">About</label>
+                <div class="tabs">
+                </div>
+            </div>
+        </div>
+<!--        <div class="center" id="mainMenu">
             <ul class="mainMenu">
                 <li class="mainMenuItem"><a href="#">Home</a></li>
-                <li class="mainMenuItem"><a href="#">Vacation</a></li>
-                <li class="mainMenuItem"><a href="#">Sick leave</a></li>
+                <li class="mainMenuItem"><a href="#">Waiting for approval</a></li>
                 <li class="mainMenuItem"><a href="#">About</a></li>
             </ul>
         </div>
         <div class="center" id="mainMenu">
             <div class="menuLine"></div>
-        </div>
+        </div>-->
     </header>
     
     <content>
