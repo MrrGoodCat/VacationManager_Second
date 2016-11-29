@@ -9,7 +9,10 @@ a {
 header {
     height: auto;
     background-color: #0c2f4b;
-    min-width: 800px;
+    min-width: 1000px;
+}
+body {
+    background-color: #edeef0;
 }
 .headerLargeScreen {
     height: 200px;
@@ -27,10 +30,12 @@ header {
 .siteTitle {
     float: left;
     color: aliceblue;
-    font-size: 2.2em;
+    font-size: 3.0em;
     font-family: 'Roboto', 'Helvetica', sans-serif;
-    margin-top: 80px;
+    font-weight: 200;
+    margin-top: 70px;
     margin-left: 15px;
+    
 }
 .userContainer {
     height: 157px;        
@@ -44,6 +49,7 @@ header {
     font-family: 'Roboto', 'Helvetica', sans-serif;
     font-size: 1.5em;
     margin-top: 64px;
+    font-weight: 200;
 }
 .userImageContainer {
     height: 60px;
@@ -87,8 +93,11 @@ header {
     margin-left: 50px;
     width: 150px;
     padding: 0px;
+    margin-top: 15px;
     list-style: none;
+    box-shadow: 1px 1px 2px;
     z-index: 10;
+    
 }
 .menuItem a {
     font-size: 1.3em;
@@ -96,7 +105,9 @@ header {
     padding: 10px;
     margin: 10px;
     color: #0c2f4b;
-   transition: 0.5s all;
+    transition: 0.5s all;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 500;
 }
 
 .menuItem a:hover {
@@ -115,44 +126,21 @@ header {
 #mainMenu {
     width: 100%;
     background-color: #0c2a4b;
-}
-.mainMenuItem {
-    display: inline-block;
-    height: 38px;
-    width: 190px;
-    padding-top: 12px;
-    text-align: center;
-    font-size: 1.3em;
-    cursor: pointer;
-    transition: 0.7s all;
-    font-family: 'Roboto', 'Helvetica', sans-serif;
-}
-.mainMenuItem a {
-    color: aliceblue;
+    min-width: 1000px;
 }
 
-.mainMenuItem:hover {
-    background-color: #0c1f4b;
-}
-.mainMenuItem:active{
-    color: #0c2f4b;
-    background-color: aliceblue;
-    transition: 0.9s all;
-}
-
-.mainMenuItem:active a {
-    color: #0c2f4b;
-    font-weight: 500;
-}
-
-/*.mainMenuItem:active ~ .center.menuLine {
-    margin-left: 300px;
-}*/
 .menuLine {
-    height: 8px;
+    height: 7px;
     width: 190px;
-    margin-left: 3%;
     background-color: aliceblue;
+    z-index: 8;
+    transition: 0.3s all;
+}
+#line {
+    margin-top: 0px;
+    height: 7px;
+    background-color: #0c2a4b;
+    width: 100%;
 }
 .addButton {
     height: 60px;
@@ -164,9 +152,10 @@ header {
     align-content: center;
     position: absolute;
     right: 65px;
-    top: 225px;
+    top: 232px;
     transition: 0.6s all;
     box-shadow: 1px 1px 3px;
+    z-index: 9;
 }
 
 .addButton .button {
@@ -174,7 +163,8 @@ header {
     border-radius: 30px;
     font-size: 3.4em;
     color: aliceblue;
-    font-weight: 800;
+    font-weight: 400;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
 .addButton:hover {
@@ -192,7 +182,7 @@ header {
 
 
 .tabbed {
-    height: 60px;
+    height: 67px;
     width: 94%;
     margin: auto;
 }
@@ -204,14 +194,60 @@ header {
 .tabbed label {
     display: inline-block;
     width: 190px;
-    
+    text-align: center;
+    padding-top: 17px;
+    color: aliceblue;
+    font-size: 1.3em;
+    height: 43px;
+    font-weight: 500;
+    transition: 0.5s all;
 }
 
+.tabbed label:hover {
+    background-color: #0c1f4b;
+}
 
+.tabbed label:active {
+    color: #0c2f4b;
+    background-color: aliceblue;
+}
 
+.tabs {
+    clear: both;
+}
 
+.tabs > div {
 
+    position: absolute;
+    opacity: 0;
+    font-size: 6em;
+    transition: 0.4s all;
+}
 
+#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
+#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
+#tab-nav-3:checked ~ .tabs > div:nth-of-type(3) {
+    opacity: 1;
+}
+
+#tab-nav-2:checked ~ #line > div:nth-of-type(1)
+{
+    margin-left: 194px;
+}
+
+#tab-nav-3:checked ~ #line > div:nth-of-type(1)
+{
+    margin-left: 388px;
+}
+
+.contentCenter {
+    width: 60%;
+    height: 800px;
+    margin: auto;
+    min-width: 900px;
+    box-shadow: 2px 2px 4px;
+    background-color: white;
+}
 
 
 
