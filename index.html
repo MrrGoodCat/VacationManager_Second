@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
    
     <title>Vacation Manager</title>
 </head>
@@ -34,14 +35,16 @@
                 </div>
             </div>
         </div>
-        <div class="addButton"><a href="#" class="button">+</a></div>
+        
     </header>
     
     <content> 
         <div class="center" id="mainMenu">
+           <div class="addButton"><a href="#openModal" class="button">+</a></div>
+
             <div class="tabbed">
                 <input type="radio" name="tabs" id="tab-nav-1" checked>
-                <label for="tab-nav-1">Home</label>
+                <label for="tab-nav-1"></a>Home</label>
                 <input type="radio" name="tabs" id="tab-nav-2">
                 <label for="tab-nav-2">Waiting for approval</label>
                 <input type="radio" name="tabs" id="tab-nav-3" >
@@ -50,18 +53,36 @@
                     <div class="menuLine"></div>
                 </div>
                 <div class="tabs">
-                    <div class="home">HOME</div>
-                    <div class="approval">Waiting for approval</div>
+                    <div class="home">
+                        <div class="content-Center">
+                            <br><br><br>HOME
+                        </div>
+                    </div>
+                    <div class="approval">
+                        <div class="content-Center">
+                            <br><br><br>Waiting for approval
+                        </div>
+                    </div>
                     <div class="about">
                         <div class="content-Center">
                         About<br><br><br>Vacation Manager
                         </div>
-                    
                     </div>
                 </div>
             </div>
-        </div>
 
+<!---------------------------------Modal window for adding new absent------------------------------>            
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Закрыть" class="close">X</a>
+		<h2>Add new absent<br><br><br></h2>
+		<p>Here will be some form for adding new vakation or sick leave.</p>
+		<p><br><br><br>And few buttons: SUBMIT and CANCEL</p>
+	</div>
+</div>
+
+<!----------------------------------------------END----------------------------------------------->           
+        </div>
     </content>
     
     <footer>
