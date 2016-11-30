@@ -11,6 +11,10 @@ header {
     background-color: #0c2f4b;
     min-width: 1000px;
 }
+@media (max-width: 1000px) {
+    .headerLargeScreen { display: none; }
+    
+}
 body {
     background-color: #edeef0;
 }
@@ -95,7 +99,7 @@ body {
     padding: 0px;
     margin-top: 15px;
     list-style: none;
-    box-shadow: 1px 1px 2px;
+    box-shadow: 0 0 2px 1px dimgray;
     z-index: 10;
     
 }
@@ -213,7 +217,6 @@ body {
 }
 
 .tabs {
-    clear: both;
 }
 
 .tabs > div {
@@ -240,13 +243,20 @@ body {
     margin-left: 388px;
 }
 
-.contentCenter {
-    width: 60%;
-    height: 800px;
+.about {
+    width: 94%;
+}
+.content-Center {
     margin: auto;
-    min-width: 900px;
-    box-shadow: 2px 2px 4px;
+    margin-top: 30px;
+    height: 450px;
+    width: 60%;
+    box-shadow: 0 0 5px 1px dimgray;
+    border-radius: 3px;
     background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.5em;
 }
 
 
