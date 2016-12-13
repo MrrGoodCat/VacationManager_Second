@@ -21,8 +21,8 @@ addEventListener('DOMContentLoaded', function () {
 		mode      : 'range',
 		calendars : 3
 	});
-	pickmeup('input', {
+/*	pickmeup('input', {
 		position       : 'right',
 		hide_on_select : true
-	});
+	});*/
 });
