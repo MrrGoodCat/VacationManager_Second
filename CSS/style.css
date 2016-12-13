@@ -1,3 +1,5 @@
+$font-family:'PT Sans' !default;   
+
 *{
     padding: 0;
     margin: 0;
@@ -35,7 +37,7 @@ body {
     float: left;
     color: aliceblue;
     font-size: 3.0em;
-    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-family: $font-family;
     font-weight: 200;
     margin-top: 70px;
     margin-left: 15px;
@@ -50,7 +52,7 @@ body {
 .userName {
     float: left;
     color: aliceblue;
-    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-family: $font-family;
     font-size: 1.5em;
     margin-top: 64px;
     font-weight: 200;
@@ -71,7 +73,6 @@ body {
 .userMenuImage {
     width: 70%;
 }
-
 .userMenuButton {
     margin-top: 68px;
 	background-color:transparent;
@@ -110,7 +111,7 @@ body {
     margin: 10px;
     color: #0c2f4b;
     transition: 0.5s all;
-    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-family: $font-family;
     font-weight: 500;
 }
 
@@ -148,7 +149,7 @@ body {
     width: 100%;
 }
 
-/*---------------------------------------Add Button-------------------------------------------------*/
+/*---------------------------------------Add Button-----------------------------------------------*/
 .addButton {
     height: 60px;
     width: 60px;
@@ -172,13 +173,17 @@ body {
     font-size: 3.4em;
     color: aliceblue;
     font-weight: 400;
-    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-family: $font-family;
+    
 }
 
 .addButton:hover {
     background-color: darkred;
 }
-.addButton:hover .abcentType{
+
+.button:focus ~ .addButtonList,
+.button:active ~ .addButtonList,
+.addButtonList:hover {
     display: block;
 }
 .addButton:active {
@@ -190,24 +195,44 @@ body {
 }
 
             /*--------------------AddButton Menu------------------------*/
+.addButtonList {
+    display: none;
+    position: absolute;
+    list-style: none;
+    z-index: 10;
+    right: 3px;
+}
 
 .abcentType {
     list-style: none;
-    display: none;
     height: 54px;
     width: 54px;
     border-radius: 27px;
-    background-color: aqua;
-    margin-left: 3px;
-    position: relative;
-    margin-top: 10px;
-    transition: 1s all;
-    background-image: url("Sick_leave.png");
+    margin-bottom: 10px;
+    overflow: hidden;
+    
+}
+
+.abcentType a {
+    display: block;
+}
+
+.abcentType:hover {
+    opacity: 0.3;
+}
+
+.abcentType:active {
+    opacity: 0.5;
+}
+.abcentType a img{
+    width: 105%;
+    margin-top: -2px;
+    margin-left: -2px;
 }
 
             /*------------------End AddButton Menu----------------------*/
 
-/*---------------------------------------End Add Button-----------------------------------------------*/
+/*---------------------------------------End Add Button--------------------------------------------*/
 
 .tabbed {
     height: 67px;
@@ -240,9 +265,6 @@ body {
 .tabbed label:active {
     color: #0c2f4b;
     background-color: aliceblue;
-}
-
-.tabs {
 }
 
 .tabs > div {
@@ -289,7 +311,7 @@ body {
     padding: 20px;
     text-align: center;
     font-size: 0.5em;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: $font-family;
 }
 
 .home {
@@ -305,7 +327,7 @@ body {
 
 .modalDialog {
 	position: fixed;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: $font-family;
 	top: 0;
 	right: 0;
 	bottom: 0;

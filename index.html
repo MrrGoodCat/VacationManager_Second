@@ -49,13 +49,18 @@
     
     <content> 
         <div class="center" id="mainMenu">
-           <ul class="addButton"><a href="#openModal" class="button">+</a>
-                <li class="abcentType" id="vacation"><a href="#">Vacation</a></li>
-                <li class="abcentType" id="sickleave"><a href="#">Sick leave</a></li>
-            </ul>
+           
+            <button class="addButton" id="addButtonExspander">
+                <a class="button" href="javascript:void(0);" tabindex="1" >+</a>
+                <ul class="addButtonList" for="addButtonExspander">
+                    <li class="abcentType"><a href="#openModal"><img src="image/Vacation.png" alt="Vacation"></a></li>
+                    <li class="abcentType"><a href="#openModal"><img src="image/Sick_leave.png" alt="Sick_leave"></a></li>
+                </ul>
+            </button>
+            
             <div class="tabbed">
                 <input type="radio" name="tabs" id="tab-nav-1" checked>
-                <label for="tab-nav-1"></a>Home</label>
+                <label for="tab-nav-1">Home</label>
                 <input type="radio" name="tabs" id="tab-nav-2">
                 <label for="tab-nav-2">Waiting for approval</label>
                 <input type="radio" name="tabs" id="tab-nav-3" >
@@ -89,125 +94,13 @@
 		
 <!------------------------------------Calendar---------------------------------------->
       
-<section>
-	<h2>Add new absent</h2>
-	<article>
-		<div class="range"></div>
-	</article>
-</section>
-      
-<!----------------------------------Calendar end-------------------------------------->
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-        <!--  <calendar>
-	        <div class="container">
+        <section>
+        	<h2>Add new absent</h2>
+        	<article>
+        		<div class="range"></div>
+        	</article>
+        </section>
 
-		<div class="calendar">
-
-			<hdr>				
-
-				<h2>September</h2>
-
-				<a class="btn-prev fontawesome-angle-left" href="#"></a>
-				<a class="btn-next fontawesome-angle-right" href="#"></a>
-
-			</hdr>
-			
-			<table>
-			
-				<thead>
-					
-					<tr>
-						
-						<td>Mo</td>
-						<td>Tu</td>
-						<td>We</td>
-						<td>Th</td>
-						<td>Fr</td>
-						<td>Sa</td>
-						<td>Su</td>
-
-					</tr>
-
-				</thead>
-
-				<tbody>
-					
-					<tr>
-						<td class="prev-month">26</td>
-						<td class="prev-month">27</td>
-						<td class="prev-month">28</td>
-						<td class="prev-month">29</td>
-						<td class="prev-month">30</td>
-						<td class="prev-month">31</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>3</td>
-						<td>4</td>
-						<td>5</td>
-						<td>6</td>
-						<td>7</td>
-						<td>8</td>
-					</tr>
-					<tr>
-						<td>9</td>
-						<td class="event">10</td>
-						<td>11</td>
-						<td>12</td>
-						<td>13</td>
-						<td>14</td>
-						<td>15</td>
-					</tr>
-					<tr>
-						<td>16</td>
-						<td>17</td>
-						<td>18</td>
-						<td>19</td>
-						<td>20</td>
-						<td class="event">21</td>
-						<td>22</td>
-					</tr>
-
-					<tr>
-						<td class="current-day event">23</td>
-						<td>24</td>
-						<td>25</td>
-						<td>26</td>
-						<td>27</td>
-						<td>28</td>
-						<td>29</td>
-					</tr>
-					<tr>
-						<td>30</td>
-						<td class="next-month">1</td>
-						<td class="next-month">2</td>
-						<td class="next-month">3</td>
-						<td class="next-month">4</td>
-						<td class="next-month">5</td>
-						<td class="next-month">6</td>
-					</tr>
-
-				</tbody>
-
-			</table>
-
-		</div>
-
-	</div>
-	    </calendar>-->
-	
-	
 	</div>
 </div>
 
